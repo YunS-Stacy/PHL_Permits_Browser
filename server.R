@@ -64,7 +64,8 @@ shinyServer(function(input, output, session) {
       group_by(permitdescription) %>%
       summarize(Total = n())
     
-    ggplot(desc_permits, aes(permitdescription, Total)) + geom_bar(stat = "identity") + coord_flip()
+    ggplot(desc_permits, aes(permitdescription, Total)) + geom_bar(stat = "identity") + coord_flip() + labs(x='Permit Description')
+    
   })
   
   output$total_permits <- renderText({

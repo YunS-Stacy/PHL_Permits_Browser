@@ -34,7 +34,7 @@ To run this app locally make sure you've installed the R packages mentioned abov
 run:
 
 ```
-shiny::runGitHub("seankross/Baltimore_Crime_Browser")
+shiny::runGitHub("YunS-Stacy/PHL_Permits_Browser")
 ```
 
 

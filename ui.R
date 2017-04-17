@@ -22,11 +22,6 @@ dashboardPage(
         ),
         column(width = 3,
                box(width = NULL,
-                   dateRangeInput("date1", "Select dates to visualize.",
-                                  start = "2017-03-01", end = "2017-03-31",
-                                  min = min(permits$permitdate), max = max(permits$permitdate))
-               ),
-               box(width = NULL,
                    h4("Number of permitss"),
                    h5(textOutput("total_permits"))),
                box(width = NULL,
@@ -35,8 +30,14 @@ dashboardPage(
                box(width = NULL,
                    h4("Day of the Week with the Most permits"),
                    h5(textOutput("weekday_permits")))
-        )
-      )
+        ),
+        column(width = 8,
+               box(width = NULL,
+                   dateRangeInput("date1", "Select dates to visualize.",
+                                  start = "2017-03-01", end = "2017-03-31",
+                                  min = min(permits$permitdate), max = max(permits$permitdate))
+               )
+        ))
       ),
       tabItem(tabName = "graphs",
               fluidRow(
@@ -48,7 +49,7 @@ dashboardPage(
                            plotOutput("desc_plot")))
               ),
               fluidRow(
-                column(width = 3,
+                column(width = 6,
                        box(width = NULL,
                            dateRangeInput("date2", "Select dates to visualize.",
                                           start = "2017-03-01", end = "2017-03-31",
