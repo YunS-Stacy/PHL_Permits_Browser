@@ -11,7 +11,7 @@
 # install.packages("ggplot2")
 # install.packages("lubridate")
 
-shiny::runGitHub("seankross/PHL_Permit_Browser")
+shiny::runGitHub("YunS-Stacy/PHL_Permits_Browser")
 ```
 
 This application is an example of a dashboard that can be quickly prototyped
@@ -48,5 +48,5 @@ To run this app locally make sure you've installed the R packages mentioned abov
 run:
 
 ```
-shiny::runGitHub("seankross/PHL_Permit_Browser")
+shiny::runGitHub("YunS-Stacy/PHL_Permits_Browser")
 ```

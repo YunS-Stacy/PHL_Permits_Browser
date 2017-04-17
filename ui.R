@@ -9,7 +9,7 @@ dashboardPage(
       menuItem("Map of Philadelphia", tabName = "map", icon = icon("map")),
       menuItem("Graphs & Metrics", tabName = "graphs", icon = icon("signal", lib = "glyphicon")),
       menuItem("About", tabName = "about", icon = icon("question-circle")),
-      menuItem("Source Code", href = "http://github.com/seankross/Baltimore_permits_Browser", icon = icon("github-alt"))
+      menuItem("Source Code", href = "http://github.com/YunS-Stacy/PHL_Permits_Browser", icon = icon("github-alt"))
     )
   ),
   dashboardBody(
